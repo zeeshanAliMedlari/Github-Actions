@@ -17,10 +17,3 @@ jobs:
         with:
           node-version: 16
           test-command: npm test
-          
-  call-reusable:
-    # A reusable workflow is called as a separate job
-    uses: ./.github/workflows/reusable-ci.yml
-    with:
-      node-version: 16
-      test-command: npm test
